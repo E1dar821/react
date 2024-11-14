@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { ProductCard } from "./components/ProductCard";
+
+const products = [
+  {
+    id:0,
+    name:"Product 1",
+    price: 100,
+    category:"Category 1",
+    imge:"https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg"
+  },
+  {
+    id:1,
+    name:"Product 1",
+    price: 100,
+    category:"Category 1",
+    imge:"https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg"
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {
+        products.map((product)=>(
+          <ProductCard />
+        ))
+      }
     </div>
   );
 }
