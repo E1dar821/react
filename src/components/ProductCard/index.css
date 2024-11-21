@@ -1,9 +1,48 @@
-.product-card{
+* {
+    font-family: "Inter";
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.product-card {
+    margin-left: 10px;
     width: 300px;
-    height: fit-content;
-    padding: 34px;
+    height: 20%; 
+    padding: 20px;
     border: 1px solid #eeee;
     border-radius: 12px;
-    padding-top: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
 }

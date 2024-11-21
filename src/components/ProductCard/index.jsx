@@ -9,6 +9,7 @@ export function ProductCard(props) {
       <div>{category}</div>
       <h4>{title}</h4>
       <div>$ {price}</div>
+      <button>Add to cart</button>
     </div>
   );
 }
