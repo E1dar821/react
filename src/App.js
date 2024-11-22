@@ -15,7 +15,6 @@ function App() {
   return (
     <div>
       {loading && <div>Loading...</div>}
-      {/* <button onClick={()=>setProducts([]})}>123</button> */}
       {product.map((product) => (
         <ProductCard data={product} />
       ))}
